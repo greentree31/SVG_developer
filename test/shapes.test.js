@@ -11,9 +11,9 @@ describe("Square", () => {
     });
     test("add a fillColor", () => {
         const expectedSVG =
-        `<rect x="100" y="100" width="400" height="400" fill="#FFF06F" />`;
+        `<rect x="100" y="100" width="400" height="400" fill="#30D5C8" />`;
         const square = new Square();
-        square.setColor("#FFF06F");
+        square.setColor("#30D5C8");
         const actualSVG = square.render();
         expect(actualSVG).toEqual(expectedSVG);
     });
@@ -27,9 +27,9 @@ describe("Circle", () => {
       expect(actualSvg).toEqual(expectedSvg);
     });
     test("add a fillColor", () => {
-      const expectedSvg = '<circle cx="400" cy="400" r="400" fill="#FFF06F" />';
+      const expectedSvg = '<circle cx="400" cy="400" r="400" fill="#30D5C8" />';
       const circle = new Circle();
-      circle.setColor("#FFF06F");
+      circle.setColor("#30D5C8");
       const actualSvg = circle.render();
       expect(actualSvg).toEqual(expectedSvg);
     });
@@ -47,29 +47,29 @@ describe("Triangle", () => {
     });
     test("add a fillColor", () => {
       const expectedSvg =
-        '<polygon points="250, 60 100, 400 400,400" fill="#FFF06F" />';
+        '<polygon points="250, 60 100, 400 400,400" fill="#30D5C8" />';
       const triangle = new Triangle();
-      triangle.setColor("#FFF06F");
+      triangle.setColor("#30D5C8");
       const actualSvg = triangle.render();
       expect(actualSvg).toEqual(expectedSvg);
     });
 });
 
-describe("Triangle", () => {
-    test("this should create a lavender triangle", () => {
+describe("Ellipse", () => {
+    test("this should create a fuchsia ellipse", () => {
       const expectedSvg =
-        '<ellipse cx="400" cy="200" rx="400" ry="200"  fill="#BB9BFF" />';
-      const triangle = new Triangle();
-      triangle.setColor("#BB9BFF");
-      const actualSvg = triangle.render();
+        '<ellipse cx="400" cy="200" rx="400" ry="200"  fill="#FF00A2" />';
+      const ellipse = new Ellipse();
+      ellipse.setColor("#FF00A2");
+      const actualSvg = ellipse.render();
       expect(actualSvg).toEqual(expectedSvg);
     });
     test("add a fillColor", () => {
       const expectedSvg =
-        '<ellipse cx="400" cy="200" rx="400" ry="200" fill="#FFF06F" />';
-      const triangle = new Triangle();
-      triangle.setColor("#FFF06F");
-      const actualSvg = triangle.render();
+        '<ellipse cx="400" cy="200" rx="400" ry="200" fill="#30D5C8" />';
+      const ellipse = new Ellipse();
+      ellipse.setColor("#30D5C8");
+      const actualSvg = ellipse.render();
       expect(actualSvg).toEqual(expectedSvg);
     });
 });
