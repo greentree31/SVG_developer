@@ -1,0 +1,29 @@
+{
+  "name": "svg_developer",
+  "version": "1.0.0",
+  "description": "this is an svg developer",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greentree31/SVG_developer.git"
+  },
+  "keywords": [
+    "svg"
+  ],
+  "author": "m.evans 2023",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greentree31/SVG_developer/issues"
+  },
+  "homepage": "https://github.com/greentree31/SVG_developer#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^29.6.4"
+  }
+}
