@@ -3,11 +3,8 @@
   "version": "1.0.0",
   "description": "this is an svg developer",
   "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
-    "test": "node index.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,3 @@
-const CLI = require("./lib/cli");
+const SVG = require("./lib/svg");
 
-new CLI().run();
+new SVG().run();
