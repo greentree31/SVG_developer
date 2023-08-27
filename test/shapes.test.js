@@ -1,4 +1,4 @@
-const { Square, Circle, Triangle, Ellipse } = require("././lib/shapes");
+const { Square, Circle, Triangle, Ellipse } = require("./lib/shapes");
 
 describe("Square", () => {
     test("this should create a blue square", () => {
@@ -20,14 +20,14 @@ describe("Square", () => {
 });
 describe("Circle", () => {
     test("this should create a lime colored circle", () => {
-      const expectedSvg = '<circle cx="400" cy="400" r="400" fill="#A8FF6F" />';
+      const expectedSvg = '<circle cx="150" cy="100" r="80" fill="#A8FF6F" />';
       const circle = new Circle();
       circle.setColor("#A8FF6F");
       const actualSvg = circle.render();
       expect(actualSvg).toEqual(expectedSvg);
     });
     test("add a fillColor", () => {
-      const expectedSvg = '<circle cx="400" cy="400" r="400" fill="#30D5C8" />';
+      const expectedSvg = '<circle cx="150" cy="100" r="80" fill="#30D5C8" />';
       const circle = new Circle();
       circle.setColor("#30D5C8");
       const actualSvg = circle.render();
@@ -58,7 +58,7 @@ describe("Triangle", () => {
 describe("Ellipse", () => {
     test("this should create a fuchsia ellipse", () => {
       const expectedSvg =
-        '<ellipse cx="400" cy="200" rx="400" ry="200"  fill="#FF00A2" />';
+        '<ellipse cx="100" cy="50" rx="400" ry="200" fill="#FF00A2" />';
       const ellipse = new Ellipse();
       ellipse.setColor("#FF00A2");
       const actualSvg = ellipse.render();
@@ -66,7 +66,7 @@ describe("Ellipse", () => {
     });
     test("add a fillColor", () => {
       const expectedSvg =
-        '<ellipse cx="400" cy="200" rx="400" ry="200" fill="#30D5C8" />';
+        '<ellipse cx="100" cy="50" rx="400" ry="200" fill="#30D5C8" />';
       const ellipse = new Ellipse();
       ellipse.setColor("#30D5C8");
       const actualSvg = ellipse.render();
