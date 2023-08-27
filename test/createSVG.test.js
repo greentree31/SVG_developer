@@ -1,7 +1,7 @@
 const createSVG = require("./lib/createSVG");
 const { Square } = require("./lib/shapes");
 
-test("should render a 400 x 400 square", () => {
+test("should render a 300 x 200 square", () => {
   const expectedSvg =
     '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"></svg>';
   const svg = new createSVG();
@@ -32,7 +32,7 @@ test("should throw if text exceeds 5 characters", () => {
 
 test("include a shape", () => {
   const expectedSvg =
-    '<svg version="1.1" width="400" height="400" xmlns="http://www.w3.org/2000/svg"><rect x="90" y="40" width="200" height="200" fill="#30D5C8" /><text x="150" y="125" font-size="40" text-anchor="middle" fill="#999">createSVG</text></svg>';
+    '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"><rect x="90" y="40" width="200" height="200" fill="#30D5C8" /><text x="150" y="125" font-size="40" text-anchor="middle" fill="#999">createSVG</text></svg>';
   const svg = new createSVG();
   svg.setText("SVG", "#999");
   const square = new Square();

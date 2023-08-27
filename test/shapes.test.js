@@ -3,7 +3,7 @@ const { Square, Circle, Triangle, Ellipse } = require("./lib/shapes");
 describe("Square", () => {
     test("this should create a blue square", () => {
         const expectedSVG = 
-        `<rect x="100" y="100" width="400" height="400" fill="#3352FF" />`;
+        `<rect x="100" y="100" width="300" height="300" fill="#3352FF" />`;
         const square = new Square();
         square.setColor("#3352FF");
         const actualSVG= square.render();
@@ -11,7 +11,7 @@ describe("Square", () => {
     });
     test("add a fillColor", () => {
         const expectedSVG =
-        `<rect x="100" y="100" width="400" height="400" fill="#30D5C8" />`;
+        `<rect x="100" y="100" width="300" height="300" fill="#30D5C8" />`;
         const square = new Square();
         square.setColor("#30D5C8");
         const actualSVG = square.render();
