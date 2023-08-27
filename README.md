@@ -6,8 +6,10 @@ This is an SVG developer. You input what letters you want in a shape.
 
 ## Final Product
 
-[![Final Product](examples/svg.jpg)](examples/svg.jpg)
+Click to watch the video submission [HERE!](https://drive.google.com/file/d/1f_Ufi7S0m0IeFKlJIkElW_XogYCh79Om/view "Watch Video here")
 
+
+[![Final Product](examples/svg.jpg)](examples/svg.jpg)
 
 ## Credits
 
@@ -15,7 +17,7 @@ Melisha Evans
 
 ## Technology
 
-This was created with Javascript, node. 
+This was created with Javascript, node.
 
 ## License
 
