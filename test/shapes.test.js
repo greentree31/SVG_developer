@@ -58,7 +58,7 @@ describe("Triangle", () => {
 describe("Ellipse", () => {
     test("this should create a fuchsia ellipse", () => {
       const expectedSvg =
-        '<ellipse cx="100" cy="50" rx="400" ry="200" fill="#FF00A2" />';
+        '<ellipse  cx="150" cy="50" rx="100" ry="50" fill="#FF00A2" />';
       const ellipse = new Ellipse();
       ellipse.setColor("#FF00A2");
       const actualSvg = ellipse.render();
@@ -66,7 +66,7 @@ describe("Ellipse", () => {
     });
     test("add a fillColor", () => {
       const expectedSvg =
-        '<ellipse cx="100" cy="50" rx="400" ry="200" fill="#30D5C8" />';
+        '<ellipse   cx="150" cy="50" rx="100" ry="50" fill="#30D5C8" />';
       const ellipse = new Ellipse();
       ellipse.setColor("#30D5C8");
       const actualSvg = ellipse.render();
